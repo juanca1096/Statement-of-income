@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Resultados</title>
+</head>
+<body>
+    <h1>Estado de Resultados</h1>
+
+    <input type="number" id="inputAño" placeholder="ingresa año"/> 
+    <input type="number" id="inputVenta" placeholder="ingresa venta neta"/>
+    <input type="number" id="inputCosto" placeholder="ingresa costo de ventas"/>
+    <input type="number" id="inputGastos" placeholder="ingresa gasto de ventas" />
+    <input type="number" id="inputAdministracion" placeholder="ingresa gastos de administracion" />
+    <input type="number" id="inputOtrosIngresos" placeholder="ingresa otros ingresos" />
+    <input type="number" id="inputOtrosEgresos" placeholder="ingresa otros egresos" />
+    <input type="number" id="inputImpuesto" placeholder="ingresa porcentaje de impto renta" />
+
+    <button type="button" onclick="calculo()">Enviar Datos</button>
+
+    <section>
+        <h1>ESTADO DE RESULTADOS</h1>
+        <h2>Nombre de la empresa</h2>
+
+        <p id="utilidadBruta"></p>
+        <p id="UtilidadOperativa"></p>
+        <p id="UtilidadSinImpuesto"></p>
+        <p id="impuestoRenta"></p>
+        <p id="UtilidadNeta"></p>
+
+
+
+    </section>
+    
+    <script src="./lista.js"></script>
+    <script src="estado.js"></script>
+</body>
+</html>
