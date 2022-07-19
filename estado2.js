@@ -1,8 +1,4 @@
-   const resultados = document.querySelector(".statement");
-    function mostrarMas(){
-        resultados.style.maxHeight = ".maximo";
-    }
-function calculo () {
+function calculo2 () {
     const inputAño = document.getElementById("inputAño");
     const año = inputAño.value;
     const inputVenta = document.getElementById("inputVenta");
@@ -22,9 +18,9 @@ function calculo () {
 
     
     
-    const ventas = []
+    const ventas2 = []
     
-    ventas.push ({
+    ventas2.push ({
         año : año,
         venta: venta,
         costo : costo,
@@ -34,15 +30,13 @@ function calculo () {
         otrosegresos : otrosEgresos,
         impuesto : impuesto,
     });
-
-    //Estructura html
- 
+    
     //Utilidad Bruta
-    const valor = ventas.map(
+    const valor = ventas2.map(
     function(lista){
-        return lista.venta;
+        return lista.ventas2;
     });
-    const descuento = ventas.map(
+    const descuento = ventas2.map(
     function(lista){
         return lista.costo;
     }); 
@@ -51,11 +45,11 @@ function calculo () {
     textBruta.innerText = "Utilidad bruta: $" + utilidadBruta;
 
     // Utilidad Operativa
-    const gastoVenta = ventas.map(
+    const gastoVenta = ventas2.map(
     function(lista){
         return lista.gastos;
     });
-    const gastoAdmin = ventas.map(
+    const gastoAdmin = ventas2.map(
     function(lista){
         return lista.administracion;
     });
@@ -65,11 +59,11 @@ function calculo () {
 
     // Utilidad antes de Impuesto
 
-    const ingresos = ventas.map(
+    const ingresos = ventas2.map(
     function(lista){
         return lista.otrosingresos;
     });
-    const egresos = ventas.map(
+    const egresos = ventas2.map(
     function(lista){
         return lista.otrosegresos;
     });
@@ -79,7 +73,7 @@ function calculo () {
     
     // Utilidad Neta
 
-    const porcentajeImpuesto = ventas.map(
+    const porcentajeImpuesto = ventas2.map(
     function(lista){
         return lista.impuesto;
     });
@@ -91,7 +85,7 @@ function calculo () {
     const textNeta = document.getElementById("UtilidadNeta");
     textNeta.innerText = "Utilidad neta: $" + UtilidadNeta;
     
-    console.log(ventas);
+    console.log(ventas2);
 
 }
 

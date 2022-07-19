@@ -4,37 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Estado de Resultados</title>
 </head>
 <body>
-    <h1>Estado de Resultados</h1>
+    <form action="" class="user-info">
+            <p>Formulario de estado de resultados</p>
+            <input type="number" id="inputAño" placeholder="ingresa año"/> 
+            <input type="number" id="inputVenta" placeholder="ingresa venta neta"/>
+            <input type="number" id="inputCosto" placeholder="ingresa costo de ventas"/>
+            <input type="number" id="inputGastos" placeholder="ingresa gasto de ventas" />
+            <input type="number" id="inputAdministracion" placeholder="ingresa gastos de administracion" />
+            <input type="number" id="inputOtrosIngresos" placeholder="ingresa otros ingresos" />
+            <input type="number" id="inputOtrosEgresos" placeholder="ingresa otros egresos" />
+            <input type="number" id="inputImpuesto" placeholder="ingresa porcentaje de impto renta" />
+            <input type="text" id="empresa" placeholder="Ingresa el nombre de tu empresa">
+            <div>
+                <button type="button" onclick="calculo()">Enviar Ventas 1</button>
+                <button type="button" onclick="calculo2()">Enviar Ventas 2</button>
+            </div>
+    </form>
 
-    <input type="number" id="inputAño" placeholder="ingresa año"/> 
-    <input type="number" id="inputVenta" placeholder="ingresa venta neta"/>
-    <input type="number" id="inputCosto" placeholder="ingresa costo de ventas"/>
-    <input type="number" id="inputGastos" placeholder="ingresa gasto de ventas" />
-    <input type="number" id="inputAdministracion" placeholder="ingresa gastos de administracion" />
-    <input type="number" id="inputOtrosIngresos" placeholder="ingresa otros ingresos" />
-    <input type="number" id="inputOtrosEgresos" placeholder="ingresa otros egresos" />
-    <input type="number" id="inputImpuesto" placeholder="ingresa porcentaje de impto renta" />
+    
+    <section class="statement">
+        <button onclick="mostrarMas()">maximo</button>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, veritatis libero expedita quibusdam atque delectus eligendi dolorum cupiditate iure ipsum cumque, magni ad mollitia accusamus nam dicta totam repellendus voluptatibus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+                        numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat
+            numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eum nam atque possimus non vel, quod repellat numquam minima rerum officia cum voluptatibus adipisci dolore eaque, aperiam expedita nemo ipsa.
 
-    <button type="button" onclick="calculo()">Enviar Datos</button>
-
-    <section>
-        <h1>ESTADO DE RESULTADOS</h1>
-        <h2>Nombre de la empresa</h2>
-
-        <p id="utilidadBruta"></p>
+        </p>
+        <h1 id="titulo"></h1>
+        <p id="utilidadBruta">
+            Utilidad Bruta
+        </p>
         <p id="UtilidadOperativa"></p>
         <p id="UtilidadSinImpuesto"></p>
         <p id="impuestoRenta"></p>
         <p id="UtilidadNeta"></p>
 
-
-
     </section>
-    
+
     <script src="./lista.js"></script>
     <script src="estado.js"></script>
+    <script src="estado2.js"></script>
 </body>
 </html>
