@@ -1,7 +1,3 @@
-   const resultados = document.querySelector(".statement");
-    function mostrarMas(){
-        resultados.style.maxHeight = ".maximo";
-    }
 function calculo () {
     const inputAño = document.getElementById("inputAño");
     const año = inputAño.value;
@@ -19,7 +15,8 @@ function calculo () {
     const otrosEgresos = inputOtrosEgresos.value;
     const inputImpuesto = document.getElementById("inputImpuesto");
     const impuesto = inputImpuesto.value;
-
+    const inputEmpresa = document.getElementById("inputEmpresa");
+    const empresa = inputEmpresa.value;
     
     
     const ventas = []
@@ -33,10 +30,17 @@ function calculo () {
         otrosingresos : otrosIngresos,
         otrosegresos : otrosEgresos,
         impuesto : impuesto,
+        empresa : empresa,
     });
 
-    //Estructura html
- 
+    const nombre = ventas.map(
+    function(lista){
+        return lista.empresa;
+    });
+
+    const textNombre = document.getElementById("Empresa")
+    textNombre.innerText = nombre;
+    
     //Utilidad Bruta
     const valor = ventas.map(
     function(lista){
@@ -90,10 +94,11 @@ function calculo () {
     const UtilidadNeta = utilidadSinImpuesto - impuestoRenta;
     const textNeta = document.getElementById("UtilidadNeta");
     textNeta.innerText = "Utilidad neta: $" + UtilidadNeta;
+
+
+
     
     console.log(ventas);
-
 }
-
 
 

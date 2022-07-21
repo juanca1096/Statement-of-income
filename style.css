@@ -33,7 +33,7 @@ body {
     font-weight: 700;
 }
 
-/*.statement {
+.statement {
     background: white;
     display: flex;
     justify-content: center;
@@ -42,16 +42,14 @@ body {
     margin: 0 auto;
     width: 500px;
     border-radius: 15px;
-}*/
-.statement p {
+    margin-top: 20px;
+    height: auto;
+}
+#statement p {
     justify-content: space-between;
     margin-top: 10px;
 }
-section {
+#statement {
     max-height: 20px;
     overflow: hidden;
-    transition: max-heigt 1s;
-}
-section.maximo{
-    max-height: 1000px;
 }
